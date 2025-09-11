@@ -1,5 +1,0 @@
-fer
-tensorflow
-opencv-python
-pandas
-moviepy
