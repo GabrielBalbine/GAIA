@@ -1,0 +1,6 @@
+# docker-compose.yml
+services:
+  analisador:
+    build: .
+    volumes:
+      - ./resultados:/app/resultados
