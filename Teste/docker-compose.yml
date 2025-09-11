@@ -1,0 +1,16 @@
+# docker-compose.yml
+services:
+  esqueleto-tracker:
+    build: .
+    # Mapeia a pasta atual do projeto para a pasta /app dentro do contêiner
+    # Isso permite que você edite o código e veja as mudanças em tempo real
+    volumes:
+      - .:/app
+      # Linha mágica para a janela de vídeo (GUI) funcionar
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    # ESSENCIAL PARA A WEBCAM: Conecta a câmera do Codespace para dentro do contêiner
+    devices:
+      - "/dev/video0:/dev/video0"
+    # ESSENCIAL PARA A JANELA DE VÍDEO: Passa a variável de "tela" para o contêiner
+    environment:
+      - DISPLAY
