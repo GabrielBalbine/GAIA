@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gaialogo.png" alt="Logo do Projeto GAIA" width="200"/>
+  <img src="assets/gaia.gif" alt="Logo do Projeto GAIA" width="500"/>
 </p>
 
 <h1 align="center">Projeto GAIA</h1>
