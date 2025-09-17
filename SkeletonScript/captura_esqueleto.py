@@ -1,4 +1,4 @@
-# captura_esqueleto.py (Versão Profissional: Detecta Faces e depois Estima a Pose)
+# captura_esqueleto.py (Versão Profissional com Detector SSD)
 
 import cv2
 import mediapipe as mp
@@ -9,12 +9,16 @@ import os
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-# Carrega o detector de rostos pré-treinado do OpenCV
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+# Carrega o modelo de detecção de objetos (SSD com MobileNet) pré-treinado
+print(">>> Carregando modelo de detecção de pessoas (SSD)...")
+net = cv2.dnn.readNetFromTensorflow('frozen_inference_graph.pb', 'ssd_mobilenet.pbtxt')
+# O modelo COCO foi treinado em 90 classes, 'person' (pessoa) é a classe 15.
+ID_CLASSE_PESSOA = 15
+CONF_MINIMA = 0.60 # Confiança mínima para considerar uma detecção
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_final.mp4"
+output_video_path = "esqueleto_output_ssd.mp4"
 
 # ---------------- VERIFICAÇÃO INICIAL ----------------
 if not os.path.exists(input_video_path):
@@ -40,7 +44,7 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
+with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while cap.isOpened():
         success, image = cap.read()
         if not success:
@@ -51,45 +55,43 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_con
         if frame_count % 30 == 0:
             print(f"Processando frame #{frame_count}...")
             
-        # ETAPA 1: Detectar todos os rostos no frame
-        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        faces = face_cascade.detectMultiScale(gray_image, 1.1, 4)
+        # ETAPA 1: Detectar todas as PESSOAS no frame com o modelo SSD
+        blob = cv2.dnn.blobFromImage(image, size=(300, 300), swapRB=True, crop=False)
+        net.setInput(blob)
+        detections = net.forward()
 
-        lista_de_esqueletos = []
-        # ETAPA 2: Para cada rosto encontrado, rodar a estimação de pose
-        for (x, y, w, h) in faces:
-            # Cria uma "Região de Interesse" (ROI) um pouco maior que o rosto
-            # para dar contexto ao detector de pose.
-            roi_x = max(0, x - w)
-            roi_y = max(0, y - h)
-            roi_w = min(frame_width - roi_x, w * 3)
-            roi_h = min(frame_height - roi_y, h * 4)
+        # ETAPA 2: Para cada pessoa encontrada, rodar a estimação de pose
+        for i in range(detections.shape[2]):
+            confidence = detections[0, 0, i, 2]
+            class_id = int(detections[0, 0, i, 1])
 
-            # Recorta a imagem
-            roi = image[roi_y : roi_y + roi_h, roi_x : roi_x + roi_w]
-            
-            # Converte o recorte para RGB e processa com o MediaPipe
-            roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-            results = pose.process(roi_rgb)
-            
-            # Se um esqueleto foi encontrado no recorte, armazena-o
-            if results.pose_landmarks:
-                # IMPORTANTE: As coordenadas dos landmarks estão relativas ao recorte (ROI).
-                # Precisamos convertê-las de volta para as coordenadas da imagem completa.
-                landmarks_absolutos = results.pose_landmarks
-                for landmark in landmarks_absolutos.landmark:
-                    landmark.x = (landmark.x * roi_w + roi_x) / frame_width
-                    landmark.y = (landmark.y * roi_h + roi_y) / frame_height
-                lista_de_esqueletos.append(landmarks_absolutos)
+            # Filtra para ter certeza que é uma pessoa e que a confiança é alta
+            if class_id == ID_CLASSE_PESSOA and confidence > CONF_MINIMA:
+                # Pega as coordenadas do retângulo (bounding box) da pessoa
+                box_x = int(detections[0, 0, i, 3] * frame_width)
+                box_y = int(detections[0, 0, i, 4] * frame_height)
+                box_w = int(detections[0, 0, i, 5] * frame_width)
+                box_h = int(detections[0, 0, i, 6] * frame_height)
 
-        # Agora temos uma lista de esqueletos! Vamos desenhá-los.
-        # (Aqui você pode reinserir a lógica de identificar_pessoas se quiser)
-        for esqueleto in lista_de_esqueletos:
-            mp_drawing.draw_landmarks(
-                image, esqueleto, mp_pose.POSE_CONNECTIONS,
-                landmark_drawing_spec=mp_drawing.DrawingSpec(color=(245,117,66), thickness=2, circle_radius=2),
-                connection_drawing_spec=mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2)
-            )
+                # Recorta a imagem da pessoa
+                roi = image[box_y:box_h, box_x:box_w]
+
+                if roi.size == 0: continue
+
+                # Roda o MediaPipe Pose SÓ no recorte
+                roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
+                results = pose.process(roi_rgb)
+                
+                # Desenha o esqueleto se encontrado
+                if results.pose_landmarks:
+                    # Converte os landmarks de volta para as coordenadas da imagem original
+                    for landmark in results.pose_landmarks.landmark:
+                        landmark.x = (landmark.x * (box_w - box_x) + box_x) / frame_width
+                        landmark.y = (landmark.y * (box_h - box_y) + box_y) / frame_height
+                    
+                    # Desenha na imagem COMPLETA
+                    mp_drawing.draw_landmarks(
+                        image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
         
         out.write(image)
 
@@ -100,6 +102,5 @@ cv2.destroyAllWindows()
 
 print("-" * 30)
 print(f">>> Processamento concluído!")
-print(f">>> Total de {frame_count} frames processados.")
 print(f">>> Vídeo salvo em: '{output_video_path}'")
 print("-" * 30)
