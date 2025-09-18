@@ -1,4 +1,4 @@
-# captura_esqueleto.py (Versão Final com Detector YOLO)
+# captura_esqueleto.py (Versão com Tracking para Estabilidade)
 
 import cv2
 import mediapipe as mp
@@ -10,15 +10,17 @@ from ultralytics import YOLO
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-# Carrega o modelo de detecção de objetos YOLOv8
-# Ele vai baixar os pesos automaticamente na primeira vez
 print(">>> Carregando modelo de detecção de pessoas (YOLOv8)...")
-model = YOLO('yolov8n.pt') # 'n' é o modelo "nano", o mais leve e rápido
+model = YOLO('yolov8n.pt')
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_yolo.mp4"
-CONF_MINIMA = 0.50 # Confiança mínima para o YOLO
+output_video_path = "esqueleto_output_tracked.mp4"
+CONF_MINIMA_YOLO = 0.50
+
+# --- CONFIGURAÇÃO DO TRACKER ---
+RE_DETECCAO_FRAME = 10 # A cada quantos frames vamos rodar o YOLO de novo
+trackers = [] # Lista para armazenar nossos "mini-agentes" rastreadores
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path):
@@ -50,18 +52,38 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
 
         frame_count += 1
         
-        # ETAPA 1: Detectar todas as PESSOAS no frame com o modelo YOLO
-        results_yolo = model(image, verbose=False) # verbose=False para um log mais limpo
-
-        # ETAPA 2: Para cada pessoa encontrada, rodar a estimação de pose
-        # O resultado do YOLO já vem com os retângulos (boxes)
-        for box in results_yolo[0].boxes:
-            # A classe '0' no dataset COCO (usado pelo YOLO) é 'person'
-            if box.cls == 0 and box.conf > CONF_MINIMA:
-                # Pega as coordenadas do retângulo
-                coords = box.xyxy[0].tolist()
-                box_x1, box_y1, box_x2, box_y2 = map(int, coords)
-
+        # LÓGICA DE TRACKING E RE-DETECÇÃO
+        # Se for o primeiro frame ou a cada X frames, rodamos o YOLO
+        if frame_count % RE_DETECCAO_FRAME == 1:
+            print(f"--- Rodando detecção completa no frame #{frame_count} ---")
+            results_yolo = model(image, verbose=False)
+            trackers.clear() # Limpa os trackers antigos
+            
+            for box in results_yolo[0].boxes:
+                if box.cls == 0 and box.conf > CONF_MINIMA_YOLO:
+                    coords = box.xyxy[0].tolist()
+                    box_rect = (int(coords[0]), int(coords[1]), int(coords[2] - coords[0]), int(coords[3] - coords[1]))
+                    
+                    # Inicializa um novo tracker para cada pessoa encontrada
+                    tracker = cv2.TrackerCSRT_create()
+                    tracker.init(image, box_rect)
+                    trackers.append(tracker)
+        else:
+            # Nos outros frames, apenas atualizamos a posição dos trackers
+            new_trackers = []
+            for tracker in trackers:
+                success, box_rect = tracker.update(image)
+                if success:
+                    new_trackers.append(tracker) # Mantém só os que não se perderam
+            trackers = new_trackers
+            
+        # Agora, para cada tracker ativo, fazemos a análise de pose
+        for tracker in trackers:
+            success, box_rect = tracker.update(image)
+            if success:
+                box_x1, box_y1, w, h = [int(v) for v in box_rect]
+                box_x2, box_y2 = box_x1 + w, box_y1 + h
+                
                 # Recorta a imagem da pessoa
                 roi = image[box_y1:box_y2, box_x1:box_x2]
                 if roi.size == 0: continue
@@ -74,12 +96,12 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
                 if results_pose.pose_landmarks:
                     # Converte os landmarks de volta para as coordenadas da imagem original
                     for landmark in results_pose.pose_landmarks.landmark:
-                        landmark.x = (landmark.x * (box_x2 - box_x1) + box_x1) / frame_width
-                        landmark.y = (landmark.y * (box_y2 - box_y1) + box_y1) / frame_height
+                        landmark.x = (landmark.x * w + box_x1) / frame_width
+                        landmark.y = (landmark.y * h + box_y1) / frame_height
                     
                     mp_drawing.draw_landmarks(
                         image, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-        
+
         out.write(image)
 
 # ------------------- FINALIZAÇÃO ---------------------
