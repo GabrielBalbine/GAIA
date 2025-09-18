@@ -1,4 +1,4 @@
-# captura_esqueleto.py (Versão com chamada do tracker.update() corrigida)
+# captura_esqueleto.py (Versão com Refinamento e Correção do Tracker)
 
 import cv2
 import mediapipe as mp
@@ -14,13 +14,13 @@ mp_drawing = mp.solutions.drawing_utils
 
 print(">>> Carregando modelo de detecção de pessoas (YOLOv8s)...")
 model = YOLO('yolov8s.pt') 
-
 tracker = SortTracker(max_age=20, min_hits=3, iou_threshold=0.3)
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_pro.mp4"
+output_video_path = "esqueleto_output_refinado.mp4"
 CONF_MINIMA_YOLO = 0.50
+ROI_PADDING = 30 
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path): sys.exit(f"ERRO: Vídeo não encontrado: '{input_video_path}'")
@@ -35,7 +35,7 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
+with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_confidence=0.55, min_tracking_confidence=0.55) as pose:
     while cap.isOpened():
         success, image = cap.read()
         if not success:
@@ -51,13 +51,18 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
                 coords = box.xyxy[0].tolist()
                 detections_for_sort.append(coords + [box.conf.item(), box.cls.item()])
 
-        # --- CORREÇÃO AQUI: Passando 'image' como segundo argumento ---
+        # --- A CORREÇÃO ESTÁ AQUI: Passamos a 'image' para o update ---
         tracked_objects = tracker.update(np.array(detections_for_sort), image)
 
         for obj in tracked_objects:
             box_x1, box_y1, box_x2, box_y2, track_id, _, _ = map(int, obj)
 
-            roi = image[box_y1:box_y2, box_x1:box_x2]
+            padded_x1 = max(0, box_x1 - ROI_PADDING)
+            padded_y1 = max(0, box_y1 - ROI_PADDING)
+            padded_x2 = min(frame_width, box_x2 + ROI_PADDING)
+            padded_y2 = min(frame_height, box_y2 + ROI_PADDING)
+
+            roi = image[padded_y1:padded_y2, padded_x1:padded_x2]
             if roi.size == 0: 
                 continue
 
@@ -65,14 +70,12 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
             results_pose = pose.process(roi_rgb)
 
             if results_pose.pose_landmarks:
-                for landmark in results_pose.pose_landmarks.landmark:
-                    landmark.x = (landmark.x * (box_x2 - box_x1) + box_x1) / frame_width
-                    landmark.y = (landmark.y * (box_y2 - box_y1) + box_y1) / frame_height
+                mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS,
+                    landmark_drawing_spec=mp_drawing.DrawingSpec(color=(255, 128, 0), thickness=2, circle_radius=2),
+                    connection_drawing_spec=mp_drawing.DrawingSpec(color=(0, 255, 128), thickness=2, circle_radius=2))
 
-                mp_drawing.draw_landmarks(image, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-
-                cv2.putText(image, f"Pessoa #{track_id}", (box_x1, box_y1 - 10), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+                cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 128), 2)
 
         out.write(image)
 
