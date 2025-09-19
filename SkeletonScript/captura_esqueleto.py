@@ -1,4 +1,4 @@
-# captura_esqueleto.py (Versão com Tracker Embutido do YOLO)
+# captura_esqueleto.py (Versão com Refinamento de Precisão Final)
 
 import cv2
 import mediapipe as mp
@@ -15,8 +15,10 @@ model = YOLO('yolov8s.pt')
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_finalissimo.mp4"
+output_video_path = "esqueleto_output_refinado.mp4"
 CONF_MINIMA_YOLO = 0.50
+# --- REFINAMENTO 1: Adicionamos uma margem (padding) ao redor da pessoa ---
+ROI_PADDING = 25 
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path): sys.exit(f"ERRO: Vídeo não encontrado: '{input_video_path}'")
@@ -31,7 +33,8 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
+# --- REFINAMENTO 2: Diminuímos a confiança mínima exigida do MediaPipe ---
+with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.35, min_tracking_confidence=0.35) as pose:
     while cap.isOpened():
         success, image = cap.read()
         if not success:
@@ -39,35 +42,33 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
             break
         frame_count += 1
         
-        # --- A MÁGICA ACONTECE AQUI ---
-        # Usamos model.track() em vez de model(). classes=[0] para focar só em 'pessoa'.
-        # 'persist=True' diz ao tracker para lembrar das pessoas entre os frames.
         results_yolo = model.track(image, persist=True, verbose=False, classes=[0])
 
-        # Verifica se existem caixas de rastreamento no resultado
         if results_yolo[0].boxes.id is not None:
-            # Pega as caixas e os IDs de rastreamento
             boxes = results_yolo[0].boxes.xyxy.cpu().numpy().astype(int)
             track_ids = results_yolo[0].boxes.id.cpu().numpy().astype(int)
 
-            # Itera sobre cada pessoa rastreada
             for box, track_id in zip(boxes, track_ids):
                 box_x1, box_y1, box_x2, box_y2 = box
 
-                # Recorta a imagem da pessoa (ROI)
-                roi = image[box_y1:box_y2, box_x1:box_x2]
+                # Adicionando Padding ao Redor do Retângulo para dar mais contexto
+                padded_x1 = max(0, box_x1 - ROI_PADDING)
+                padded_y1 = max(0, box_y1 - ROI_PADDING)
+                padded_x2 = min(frame_width, box_x2 + ROI_PADDING)
+                padded_y2 = min(frame_height, box_y2 + ROI_PADDING)
+
+                # Recorta a imagem da pessoa com a margem
+                roi = image[padded_y1:padded_y2, padded_x1:padded_x2]
                 if roi.size == 0: continue
 
                 # Roda o MediaPipe Pose SÓ no recorte
                 roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
                 results_pose = pose.process(roi_rgb)
                 
-                # Desenha o esqueleto se encontrado
                 if results_pose.pose_landmarks:
-                    # Desenha o esqueleto direto no recorte para maior precisão
+                    # Desenha o esqueleto direto no recorte
                     mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
                     
-                    # O desenho feito no 'roi' se reflete na 'image' original
                     cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
                                 cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
         
