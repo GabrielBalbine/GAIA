@@ -17,10 +17,10 @@ venv/
 *.pbtxt
 
 # Vídeos de resultado (gerados pelo nosso script)
-*_output_*.mp4
+#*_output_*.mp4
 
 # Vídeos de teste (para não subir dados no repo)
-video_teste_*.mp4
+#video_teste_*.mp4
 
 # Arquivos de configuração específicos do editor
 .vscode/
