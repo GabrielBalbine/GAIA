@@ -3,3 +3,5 @@ mediapipe
 ultralytics
 numpy<2
 tf-keras
+scipy
+filterpy

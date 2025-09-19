@@ -1,21 +1,26 @@
-# captura_esqueleto.py (Versão com Tracker Embutido do YOLO)
+# captura_esqueleto.py (Versão com nome do Tracker CORRETO)
 
 import cv2
 import mediapipe as mp
 import sys
 import os
 from ultralytics import YOLO
+from sort.sort import Sort # <-- CORREÇÃO 1: Nome da classe no import
+import numpy as np
 
 # ------------------- INICIALIZAÇÃO -------------------
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-print(">>> Carregando modelo de detecção e tracking (YOLOv8s)...")
+print(">>> Carregando modelo de detecção de pessoas (YOLOv8s)...")
 model = YOLO('yolov8s.pt') 
+
+# --- CORREÇÃO 2: Usando o nome correto da classe para criar o objeto ---
+tracker = Sort(max_age=20, min_hits=3, iou_threshold=0.3)
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_finalissimo.mp4"
+output_video_path = "esqueleto_output_pro.mp4"
 CONF_MINIMA_YOLO = 0.50
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
@@ -38,39 +43,40 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
             print(">>> Fim do vídeo.")
             break
         frame_count += 1
-        
-        # --- A MÁGICA ACONTECE AQUI ---
-        # Usamos model.track() em vez de model()
-        # 'persist=True' diz ao tracker para lembrar das pessoas entre os frames
-        results_yolo = model.track(image, persist=True, verbose=False, classes=[0]) # classes=[0] para focar só em 'pessoa'
 
-        # Verifica se existem caixas de rastreamento no resultado
-        if results_yolo[0].boxes.id is not None:
-            # Pega as caixas e os IDs de rastreamento
-            boxes = results_yolo[0].boxes.xyxy.cpu().numpy().astype(int)
-            track_ids = results_yolo[0].boxes.id.cpu().numpy().astype(int)
+        results_yolo = model(image, verbose=False)
 
-            # Itera sobre cada pessoa rastreada
-            for box, track_id in zip(boxes, track_ids):
-                box_x1, box_y1, box_x2, box_y2 = box
+        detections_for_sort = []
+        for box in results_yolo[0].boxes:
+            if box.cls == 0 and box.conf > CONF_MINIMA_YOLO:
+                coords = box.xyxy[0].tolist()
+                detections_for_sort.append(coords + [box.conf.item()])
 
-                # Recorta a imagem da pessoa (ROI)
-                roi = image[box_y1:box_y2, box_x1:box_x2]
-                if roi.size == 0: continue
+        if len(detections_for_sort) > 0:
+            tracked_objects = tracker.update(np.array(detections_for_sort))
+        else:
+            tracked_objects = tracker.update(np.empty((0, 5)))
 
-                # Roda o MediaPipe Pose SÓ no recorte
-                roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-                results_pose = pose.process(roi_rgb)
-                
-                # Desenha o esqueleto se encontrado
-                if results_pose.pose_landmarks:
-                    # Desenha o esqueleto direto no recorte para maior precisão
-                    mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-                    
-                    # O desenho feito no 'roi' se reflete na 'image' original
-                    cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
-                                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
-        
+        for obj in tracked_objects:
+            box_x1, box_y1, box_x2, box_y2, track_id = map(int, obj)
+
+            roi = image[box_y1:box_y2, box_x1:box_x2]
+            if roi.size == 0: 
+                continue
+
+            roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
+            results_pose = pose.process(roi_rgb)
+
+            if results_pose.pose_landmarks:
+                for landmark in results_pose.pose_landmarks.landmark:
+                    landmark.x = (landmark.x * (box_x2 - box_x1) + box_x1) / frame_width
+                    landmark.y = (landmark.y * (box_y2 - box_y1) + box_y1) / frame_height
+
+                mp_drawing.draw_landmarks(image, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+
+                cv2.putText(image, f"Pessoa #{int(track_id)}", (box_x1, box_y1 - 10), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+
         out.write(image)
 
 # ------------------- FINALIZAÇÃO ---------------------
