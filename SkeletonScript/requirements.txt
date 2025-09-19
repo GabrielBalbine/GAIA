@@ -1,4 +1,5 @@
 opencv-python
 mediapipe
 ultralytics
-sort-track
+numpy<2
+tf-keras

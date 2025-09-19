@@ -1,26 +1,22 @@
-# captura_esqueleto.py (Versão com Refinamento e Correção do Tracker)
+# captura_esqueleto.py (Versão com Tracker Embutido do YOLO)
 
 import cv2
 import mediapipe as mp
 import sys
 import os
 from ultralytics import YOLO
-from sort import SortTracker
-import numpy as np
 
 # ------------------- INICIALIZAÇÃO -------------------
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-print(">>> Carregando modelo de detecção de pessoas (YOLOv8s)...")
+print(">>> Carregando modelo de detecção e tracking (YOLOv8s)...")
 model = YOLO('yolov8s.pt') 
-tracker = SortTracker(max_age=20, min_hits=3, iou_threshold=0.3)
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_refinado.mp4"
+output_video_path = "esqueleto_output_finalissimo.mp4"
 CONF_MINIMA_YOLO = 0.50
-ROI_PADDING = 30 
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path): sys.exit(f"ERRO: Vídeo não encontrado: '{input_video_path}'")
@@ -35,48 +31,46 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_confidence=0.55, min_tracking_confidence=0.55) as pose:
+with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while cap.isOpened():
         success, image = cap.read()
         if not success:
             print(">>> Fim do vídeo.")
             break
         frame_count += 1
+        
+        # --- A MÁGICA ACONTECE AQUI ---
+        # Usamos model.track() em vez de model()
+        # 'persist=True' diz ao tracker para lembrar das pessoas entre os frames
+        results_yolo = model.track(image, persist=True, verbose=False, classes=[0]) # classes=[0] para focar só em 'pessoa'
 
-        results_yolo = model(image, verbose=False)
+        # Verifica se existem caixas de rastreamento no resultado
+        if results_yolo[0].boxes.id is not None:
+            # Pega as caixas e os IDs de rastreamento
+            boxes = results_yolo[0].boxes.xyxy.cpu().numpy().astype(int)
+            track_ids = results_yolo[0].boxes.id.cpu().numpy().astype(int)
 
-        detections_for_sort = []
-        for box in results_yolo[0].boxes:
-            if box.cls == 0 and box.conf > CONF_MINIMA_YOLO:
-                coords = box.xyxy[0].tolist()
-                detections_for_sort.append(coords + [box.conf.item(), box.cls.item()])
+            # Itera sobre cada pessoa rastreada
+            for box, track_id in zip(boxes, track_ids):
+                box_x1, box_y1, box_x2, box_y2 = box
 
-        # --- A CORREÇÃO ESTÁ AQUI: Passamos a 'image' para o update ---
-        tracked_objects = tracker.update(np.array(detections_for_sort), image)
+                # Recorta a imagem da pessoa (ROI)
+                roi = image[box_y1:box_y2, box_x1:box_x2]
+                if roi.size == 0: continue
 
-        for obj in tracked_objects:
-            box_x1, box_y1, box_x2, box_y2, track_id, _, _ = map(int, obj)
-
-            padded_x1 = max(0, box_x1 - ROI_PADDING)
-            padded_y1 = max(0, box_y1 - ROI_PADDING)
-            padded_x2 = min(frame_width, box_x2 + ROI_PADDING)
-            padded_y2 = min(frame_height, box_y2 + ROI_PADDING)
-
-            roi = image[padded_y1:padded_y2, padded_x1:padded_x2]
-            if roi.size == 0: 
-                continue
-
-            roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-            results_pose = pose.process(roi_rgb)
-
-            if results_pose.pose_landmarks:
-                mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS,
-                    landmark_drawing_spec=mp_drawing.DrawingSpec(color=(255, 128, 0), thickness=2, circle_radius=2),
-                    connection_drawing_spec=mp_drawing.DrawingSpec(color=(0, 255, 128), thickness=2, circle_radius=2))
-
-                cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 128), 2)
-
+                # Roda o MediaPipe Pose SÓ no recorte
+                roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
+                results_pose = pose.process(roi_rgb)
+                
+                # Desenha o esqueleto se encontrado
+                if results_pose.pose_landmarks:
+                    # Desenha o esqueleto direto no recorte para maior precisão
+                    mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+                    
+                    # O desenho feito no 'roi' se reflete na 'image' original
+                    cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
+                                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
+        
         out.write(image)
 
 # ------------------- FINALIZAÇÃO ---------------------
