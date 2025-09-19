@@ -1,4 +1,4 @@
-# captura_esqueleto.py (Versão com Refinamento de Precisão Final)
+# captura_esqueleto_CANHAO.py (Versão Força Bruta + Suavização)
 
 import cv2
 import mediapipe as mp
@@ -10,15 +10,19 @@ from ultralytics import YOLO
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 
-print(">>> Carregando modelo de detecção e tracking (YOLOv8s)...")
-model = YOLO('yolov8s.pt') 
+print(">>> Carregando modelo de detecção e tracking (YOLOv8x - O Canhão)...")
+# --- FORÇA BRUTA 1: Usando o modelo 'extra-large' do YOLO ---
+model = YOLO('yolov8x.pt') 
+
+# --- SUAVIZAÇÃO 1: Dicionário para guardar o histórico de landmarks ---
+historico_landmarks = {}
+ALPHA = 0.6 # Fator de suavização (0.0 = sem suavização, 0.9 = muito suave)
 
 # ------------------- CONFIGURAÇÃO --------------------
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_refinado.mp4"
+output_video_path = "esqueleto_output_CANHAO.mp4"
 CONF_MINIMA_YOLO = 0.50
-# --- REFINAMENTO 1: Adicionamos uma margem (padding) ao redor da pessoa ---
-ROI_PADDING = 25 
+ROI_PADDING = 30 
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path): sys.exit(f"ERRO: Vídeo não encontrado: '{input_video_path}'")
@@ -33,9 +37,8 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-# --- REFINAMENTO 2: Diminuímos a confiança mínima exigida do MediaPipe ---
-# Isso vai reduzir a "piscada" dos esqueletos
-with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_confidence=0.4, min_tracking_confidence=0.4) as pose:
+# --- FORÇA BRUTA 2: Usando o modelo MAIS PRECISO do MediaPipe ---
+with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while cap.isOpened():
         success, image = cap.read()
         if not success:
@@ -51,23 +54,30 @@ with mp_pose.Pose(static_image_mode=False, model_complexity=1, min_detection_con
 
             for box, track_id in zip(boxes, track_ids):
                 box_x1, box_y1, box_x2, box_y2 = box
-
-                # Adicionando Padding ao Redor do Retângulo para dar mais contexto
                 padded_x1 = max(0, box_x1 - ROI_PADDING)
                 padded_y1 = max(0, box_y1 - ROI_PADDING)
                 padded_x2 = min(frame_width, box_x2 + ROI_PADDING)
                 padded_y2 = min(frame_height, box_y2 + ROI_PADDING)
 
-                # Recorta a imagem da pessoa com a margem
                 roi = image[padded_y1:padded_y2, padded_x1:padded_x2]
                 if roi.size == 0: continue
 
-                # Roda o MediaPipe Pose SÓ no recorte
                 roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
                 results_pose = pose.process(roi_rgb)
                 
                 if results_pose.pose_landmarks:
-                    # Desenha o esqueleto direto no recorte
+                    # --- SUAVIZAÇÃO 2: Aplicando o filtro de suavização ---
+                    if track_id not in historico_landmarks:
+                        historico_landmarks[track_id] = results_pose.pose_landmarks
+                    else:
+                        # Aplica a média móvel exponencial para suavizar
+                        for i in range(len(results_pose.pose_landmarks.landmark)):
+                            results_pose.pose_landmarks.landmark[i].x = ALPHA * results_pose.pose_landmarks.landmark[i].x + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].x
+                            results_pose.pose_landmarks.landmark[i].y = ALPHA * results_pose.pose_landmarks.landmark[i].y + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].y
+                            results_pose.pose_landmarks.landmark[i].z = ALPHA * results_pose.pose_landmarks.landmark[i].z + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].z
+                        historico_landmarks[track_id] = results_pose.pose_landmarks
+
+                    # Desenha os landmarks SUAVIZADOS no recorte
                     mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
                     
                     cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
