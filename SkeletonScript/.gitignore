@@ -1,0 +1,26 @@
+# .gitignore para o Projeto GAIA
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Cache e ambientes do Python
+__pycache__/
+venv/
+*.pyc
+
+# Modelos de IA (são baixados automaticamente pela 'ultralytics')
+*.pt
+
+# Arquivos de modelos de detectores antigos (SSD)
+*.pb
+*.pbtxt
+
+# Vídeos de resultado (gerados pelo nosso script)
+*_output_*.mp4
+
+# Vídeos de teste (para não subir dados no repo)
+video_teste_*.mp4
+
+# Arquivos de configuração específicos do editor
+.vscode/
