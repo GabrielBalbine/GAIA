@@ -1,28 +1,30 @@
-# captura_esqueleto_CANHAO.py (Versão Força Bruta + Suavização)
+# captura_esqueleto.py (A Solução Definitiva com YOLOv8-Pose)
 
 import cv2
-import mediapipe as mp
+from ultralytics import YOLO
 import sys
 import os
-from ultralytics import YOLO
+import numpy as np
 
 # ------------------- INICIALIZAÇÃO -------------------
-mp_pose = mp.solutions.pose
-mp_drawing = mp.solutions.drawing_utils
-
-print(">>> Carregando modelo de detecção e tracking (YOLOv8x - O Canhão)...")
-# --- FORÇA BRUTA 1: Usando o modelo 'extra-large' do YOLO ---
-model = YOLO('yolov8x.pt') 
-
-# --- SUAVIZAÇÃO 1: Dicionário para guardar o histórico de landmarks ---
-historico_landmarks = {}
-ALPHA = 0.6 # Fator de suavização (0.0 = sem suavização, 0.9 = muito suave)
+print(">>> Carregando modelo de Pose (YOLOv8s-pose)...")
+# O modelo de pose será baixado automaticamente na primeira execução
+model = YOLO('yolov8s-pose.pt') 
 
 # ------------------- CONFIGURAÇÃO --------------------
+# IMPORTANTE: Altere o nome do arquivo aqui para o vídeo que você colocou na pasta!
 input_video_path = "video_teste_2_pessoas.mp4" 
-output_video_path = "esqueleto_output_CANHAO.mp4"
-CONF_MINIMA_YOLO = 0.50
-ROI_PADDING = 30 
+output_video_path = "esqueleto_output_YOLOPose.mp4"
+CONF_MINIMA = 0.50
+
+# Dicionário para manter uma cor única para cada pessoa rastreada
+cores_pessoas = {}
+# Função para gerar uma cor aleatória
+def cor_aleatoria(track_id):
+    if track_id not in cores_pessoas:
+        # Gera uma cor vibrante e fácil de ver
+        cores_pessoas[track_id] = tuple(np.random.randint(100, 256, size=3).tolist())
+    return cores_pessoas[track_id]
 
 # ---------------- VERIFICAÇÃO E ABERTURA DO VÍDEO ----------------
 if not os.path.exists(input_video_path): sys.exit(f"ERRO: Vídeo não encontrado: '{input_video_path}'")
@@ -37,53 +39,51 @@ out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height
 print(f">>> Processando vídeo '{input_video_path}'...")
 frame_count = 0
 
-# --- FORÇA BRUTA 2: Usando o modelo MAIS PRECISO do MediaPipe ---
-with mp_pose.Pose(static_image_mode=False, model_complexity=2, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
-    while cap.isOpened():
-        success, image = cap.read()
-        if not success:
-            print(">>> Fim do vídeo.")
-            break
-        frame_count += 1
-        
-        results_yolo = model.track(image, persist=True, verbose=False, classes=[0])
+while cap.isOpened():
+    success, image = cap.read()
+    if not success:
+        print(">>> Fim do vídeo.")
+        break
+    frame_count += 1
+    if frame_count % 30 == 0:
+        print(f"Processando frame #{frame_count}...")
+    
+    # Roda o modelo de tracking e pose do YOLO
+    # 'persist=True' diz ao tracker para lembrar das pessoas entre os frames
+    # classes=[0] foca a detecção apenas em 'pessoa'
+    results = model.track(image, persist=True, verbose=False, classes=[0])
 
-        if results_yolo[0].boxes.id is not None:
-            boxes = results_yolo[0].boxes.xyxy.cpu().numpy().astype(int)
-            track_ids = results_yolo[0].boxes.id.cpu().numpy().astype(int)
+    if results[0].boxes.id is not None:
+        # Pega os keypoints (pontos do esqueleto) e os IDs de rastreamento
+        keypoints = results[0].keypoints.xy.cpu().numpy().astype(int)
+        track_ids = results[0].boxes.id.cpu().numpy().astype(int)
 
-            for box, track_id in zip(boxes, track_ids):
-                box_x1, box_y1, box_x2, box_y2 = box
-                padded_x1 = max(0, box_x1 - ROI_PADDING)
-                padded_y1 = max(0, box_y1 - ROI_PADDING)
-                padded_x2 = min(frame_width, box_x2 + ROI_PADDING)
-                padded_y2 = min(frame_height, box_y2 + ROI_PADDING)
+        # Itera sobre cada pessoa rastreada
+        for kpts, track_id in zip(keypoints, track_ids):
+            cor = cor_aleatoria(track_id)
+            
+            # Desenha as conexões do esqueleto (linhas)
+            conexoes = [
+                (0, 1), (0, 2), (1, 3), (2, 4),  # Cabeça
+                (5, 6), (5, 7), (7, 9), (6, 8), (8, 10), (5, 11), (6, 12), (11, 12), # Tronco
+                (11, 13), (13, 15), (12, 14), (14, 16) # Pernas
+            ]
+            for i, j in conexoes:
+                # Verifica se os pontos foram detectados antes de desenhar a linha
+                if i < len(kpts) and j < len(kpts) and kpts[i][0] > 0 and kpts[j][0] > 0:
+                    cv2.line(image, tuple(kpts[i]), tuple(kpts[j]), cor, 2)
+            
+            # Desenha os pontos (juntas)
+            for kpt in kpts:
+                if kpt[0] > 0: # Só desenha se o ponto foi detectado
+                    cv2.circle(image, tuple(kpt), 4, cor, -1)
 
-                roi = image[padded_y1:padded_y2, padded_x1:padded_x2]
-                if roi.size == 0: continue
-
-                roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
-                results_pose = pose.process(roi_rgb)
-                
-                if results_pose.pose_landmarks:
-                    # --- SUAVIZAÇÃO 2: Aplicando o filtro de suavização ---
-                    if track_id not in historico_landmarks:
-                        historico_landmarks[track_id] = results_pose.pose_landmarks
-                    else:
-                        # Aplica a média móvel exponencial para suavizar
-                        for i in range(len(results_pose.pose_landmarks.landmark)):
-                            results_pose.pose_landmarks.landmark[i].x = ALPHA * results_pose.pose_landmarks.landmark[i].x + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].x
-                            results_pose.pose_landmarks.landmark[i].y = ALPHA * results_pose.pose_landmarks.landmark[i].y + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].y
-                            results_pose.pose_landmarks.landmark[i].z = ALPHA * results_pose.pose_landmarks.landmark[i].z + (1 - ALPHA) * historico_landmarks[track_id].landmark[i].z
-                        historico_landmarks[track_id] = results_pose.pose_landmarks
-
-                    # Desenha os landmarks SUAVIZADOS no recorte
-                    mp_drawing.draw_landmarks(roi, results_pose.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-                    
-                    cv2.putText(image, f"ID: {track_id}", (box_x1, box_y1 - 10), 
-                                cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
-        
-        out.write(image)
+            # Desenha o ID da pessoa
+            bbox = results[0].boxes.xyxy.cpu().numpy()[list(track_ids).index(track_id)].astype(int)
+            cv2.putText(image, f"ID: {track_id}", (bbox[0], bbox[1] - 10), 
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.9, cor, 2)
+    
+    out.write(image)
 
 # ------------------- FINALIZAÇÃO ---------------------
 cap.release()
@@ -91,5 +91,6 @@ out.release()
 cv2.destroyAllWindows()
 print("-" * 30)
 print(f">>> Processamento concluído!")
+print(f">>> Total de {frame_count} frames processados.")
 print(f">>> Vídeo salvo em: '{output_video_path}'")
 print("-" * 30)
