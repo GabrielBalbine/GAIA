@@ -12,7 +12,6 @@ print(">>> Carregando modelo de Pose (YOLOv8s-pose)...")
 model = YOLO('yolov8s-pose.pt') 
 
 # ------------------- CONFIGURAÇÃO --------------------
-# IMPORTANTE: Altere o nome do arquivo aqui para o vídeo que você colocou na pasta!
 input_video_path = "video_teste_2_pessoas.mp4" 
 output_video_path = "esqueleto_output_YOLOPose.mp4"
 CONF_MINIMA = 0.50
