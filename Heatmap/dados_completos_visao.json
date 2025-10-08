@@ -1,0 +1,5192 @@
+{
+    "metadata": {},
+    "frames": [
+        {
+            "frame_id": 1,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 2,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 3,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 4,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 5,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 6,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 7,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 8,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 9,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 10,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 11,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 12,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 13,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 14,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 15,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 16,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 17,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 18,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 19,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 20,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 21,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 22,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 23,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 24,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 25,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 26,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 27,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 28,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 29,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 30,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 31,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 32,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 33,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 34,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 35,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 36,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 37,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 38,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 39,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 40,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 41,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 42,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 43,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 44,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 45,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 46,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 47,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 48,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 49,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 50,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 51,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 52,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 53,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 54,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 55,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 56,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 57,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 58,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 59,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 60,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 61,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 62,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 63,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 64,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 65,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 66,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 67,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 68,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 69,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 70,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 71,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 72,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 73,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 74,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 75,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 76,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 77,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 78,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 79,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 80,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 81,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 82,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 83,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 84,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 85,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 86,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 87,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 88,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 89,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 90,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 91,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 92,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 93,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 94,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 95,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 96,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 97,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 98,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 99,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 100,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 101,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 102,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 103,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 104,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 105,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 106,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 107,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 108,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 109,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 110,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 111,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 112,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 113,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 114,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 115,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 116,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 117,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 118,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 119,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 120,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 121,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 122,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 123,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 124,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 125,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 126,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 127,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 128,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 129,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 130,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 131,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 132,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 133,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 134,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 135,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 136,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 137,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 138,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 139,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 140,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 141,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 142,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 143,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 144,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 145,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 146,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 147,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 148,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 149,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 150,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 151,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 152,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 153,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 154,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 155,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 156,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 157,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 158,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 159,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 160,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 161,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 162,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 163,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 164,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 165,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 166,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 167,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 168,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 169,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 170,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 171,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 172,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 173,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 174,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 175,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 176,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 177,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 178,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 179,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 180,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 181,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 182,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 183,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 184,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 185,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 186,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 187,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 188,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 189,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 190,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 191,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 192,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 193,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 194,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 195,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 196,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 197,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 198,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 199,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 200,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 201,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 202,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 203,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 204,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 205,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 206,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 207,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 208,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 209,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 210,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 211,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 212,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 213,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 214,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 215,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 216,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 217,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 218,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 219,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 220,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 221,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 222,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 223,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 224,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 225,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 226,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 227,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": false
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 228,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 229,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 230,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 231,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 232,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 233,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 234,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 235,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 236,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 237,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 238,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 239,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 240,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 241,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 242,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 243,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 244,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 245,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 246,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 247,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 248,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 249,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 250,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 251,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 252,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 253,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 254,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 255,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 256,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 257,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 258,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 259,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 260,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 261,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 262,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 263,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 264,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 265,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 266,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 267,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 268,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 269,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 270,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 271,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 272,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 273,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 274,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 275,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 276,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 277,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 278,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 279,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 280,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 281,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 282,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 283,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 284,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 285,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 286,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 287,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 288,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 289,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 290,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 291,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 292,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 293,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 294,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        },
+        {
+            "frame_id": 295,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 296,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 297,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 298,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 299,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 300,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 301,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 302,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 303,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 304,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 305,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 306,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 307,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 308,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 309,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 310,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 311,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 312,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 313,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 314,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 315,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 316,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 317,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 318,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": true
+                }
+            ]
+        },
+        {
+            "frame_id": 319,
+            "analisado": true,
+            "motivo": "",
+            "pessoas": [
+                {
+                    "track_id": 2,
+                    "papel": "Crianca",
+                    "olhando_para_parceiro": true
+                },
+                {
+                    "track_id": 1,
+                    "papel": "Guardiao",
+                    "olhando_para_parceiro": false
+                }
+            ]
+        },
+        {
+            "frame_id": 320,
+            "analisado": false,
+            "motivo": "Numero de pessoas invalido",
+            "pessoas": []
+        }
+    ]
+}
